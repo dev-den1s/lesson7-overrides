@@ -4,18 +4,19 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello world");
-        System.out.println("Now i'm trying to understand Git");
-        Car car = new Car();
-        ElectricCar electricCar = new ElectricCar();
-        electricCar.vzhuh();
-        electricCar.vzhuh();
 
-        System.out.println("hashcode" +
-                car.hashCode());
-    }
+        Human denis = new Human("Denis", 20);
+        Human yurii = new Human("Yurii", 20);
+        Human seryi = new Human("Sergei", 20);
 
-    private double pow(double a, double b) {
-        return Math.pow(a, b);
+        if (denis.hashCode() == seryi.hashCode())
+            System.out.println("Sergei i Denis have the same hashcode " +
+                    denis.hashCode() + " = " + seryi.hashCode());
+        if (denis.hashCode() == denis.hashCode())
+            System.out.println("Denis i Denis have the same hashcode" +
+                    denis.hashCode() + " = " + denis.hashCode());
+
+
     }
 
 }
