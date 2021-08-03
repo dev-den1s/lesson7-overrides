@@ -1,4 +1,4 @@
-package hillel;
+package hillel.lesson7HashCode;
 
 public class Main {
 
